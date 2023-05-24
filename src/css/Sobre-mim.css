@@ -1,0 +1,228 @@
+body {
+    font-family: 'Sofia Sans', 'EB Garamond', sans-serif;
+    max-width: 99.8%;
+    background-color: #9e9a9a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabeca {
+    border-width: 1px;
+    display: flex;
+    background-color: #0c101c;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.logo {
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.menu {
+    align-self: center;
+}
+
+.menu li {
+    color: rgb(255, 255, 255);
+    padding-left: 1.8%;
+    display: inline-block;
+    font-size: 1vw;
+}
+
+.menu li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.background {
+    background-image: url(Imagens/Curriculo/fundo-branco-monocromatico-de-estilo-de-papel_52683-66443.avif);
+    height: 42vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgb(56, 51, 51);
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 18%;
+    height: 70%;
+    width: 65%;
+    padding: 1.5%;
+}
+
+.nome {
+    font-size: 2.5vw;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+
+.foto {
+    width: 60%;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.sobre {
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-align: justify;
+    overflow-y: scroll;
+    margin-top: 5%;
+    padding-right: 1%;
+}
+
+.paragrafos {
+    text-indent: 10%;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2%;
+}
+
+@media (max-width: 1024px) {
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 68vw;
+    }
+    .grid {
+        height: 50%;
+    }
+   
+    .foto {
+        width: 70%;
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+    .sobre {
+        max-height: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .cabeca {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    .logo {
+        width: 35%;
+        margin-left: 30%;
+    }
+   
+    .menu ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        font-size: 5vw;
+        padding-left: 2%;
+        padding-bottom: 2%;
+    }
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 190vw;
+    }
+
+    .grid {
+        width: 90%;
+        height: 58%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .nome {
+        font-size: 2.8vw;
+    }
+
+    .foto {
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .sobre {
+        padding: 4%;
+        font-size: 2.5vw;
+        max-height: 90%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .cabeca {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 35%;
+        margin-left: 30%;
+    }
+    .menu ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu li {
+        font-size: 5vw;
+        padding-left: 2%;
+        padding-bottom: 2%;
+    }
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 190vw;
+    }
+    .template {
+        width: 90%;
+        height: 58%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .ident {
+        gap: 2%
+    }
+    .Imagem {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .texto {
+        box-shadow: none;
+        padding: 4%;
+        font-size: 4.493749vw;
+    }
+}
+
+
+

@@ -1,0 +1,261 @@
+body {
+    font-family: 'Sofia Sans', 'EB Garamond', sans-serif;
+    max-width: 99.8%;
+    background-color: #9e9a9a;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabeca {
+    border-width: 1px;
+    display: flex;
+    background-color: #0c101c;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.logo {
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.menu {
+    align-self: center;
+}
+
+.menu li {
+    color: rgb(255, 255, 255);
+    padding-left: 1.8%;
+    display: inline-block;
+    font-size: 1vw;
+}
+
+.menu li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.background {
+    background-image: url(Imagens/Curriculo/fundo-branco-monocromatico-de-estilo-de-papel_52683-66443.avif);
+    max-height: 1700px;
+    height: 42vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+session {
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.projeto {
+    background-color: rgba(204, 203, 206, 0.7);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(56, 51, 51);
+    padding: 4%;
+    max-width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projeto:hover {
+    background-color: azure;
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.nome {
+    font-size: 2.5vw;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+session .pokedex .apresentacao {
+    color: #000000;
+    font-weight: 600;
+    text-indent: 10%;
+    font-size: 1.4vw;
+    text-align: justify;
+    margin: 0;
+    margin-top: 3%;
+}
+
+.gif-charizard {
+    width: 150%;
+    margin-left: 35%;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1%;
+}
+
+@media (max-width: 2000px) {
+    session {
+        margin-top: 6%;
+        margin-left: 10%;
+    }
+    .projeto {
+        background-color: rgba(204, 203, 206, 0.7);
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px 5px rgb(56, 51, 51);
+        padding: 4%;
+        max-width: 15%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projeto:hover {
+        background-color: azure;
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    .nome {
+        font-size: 2.5vw;
+        font-weight: 800;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    session .pokedex .apresentacao {
+        color: #000000;
+        font-weight: 600;
+        text-indent: 10%;
+        font-size: 1.2vw;
+        text-align: justify;
+        margin: 0;
+        margin-top: 3%;
+    }
+    .gif-charizard {
+        width: 150%;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    session {
+        margin-top: 6%;
+        margin-left: 10%;
+        padding: 1%;
+    }
+    .projeto {
+        background-color: rgba(204, 203, 206, 0.7);
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px 5px rgb(56, 51, 51);
+        padding: 5%;
+        max-width: 200px;
+        max-height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projeto:hover {
+        background-color: azure;
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    .nome {
+        font-size: 3vw;
+        font-weight: 800;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    session .pokedex .apresentacao {
+        color: #000000;
+        font-weight: 600;
+        text-indent: 10%;
+        font-size: 1.5vw;
+        text-align: justify;
+        margin: 0;
+        margin-top: 3%;
+    }
+    .gif-charizard {
+        width: 100%;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        color: #000000;
+        font-weight: 600;
+        text-indent: 10%;
+        font-size: 4vw;
+        text-align: justify;
+        margin: 0;
+    }
+    .gif-charizard {
+        width: 80%;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabeca {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 35%;
+        margin-left: 30%;
+    }
+    .menu ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu li {
+        font-size: 5vw;
+        padding-left: 2%;
+        padding-bottom: 2%;
+    }
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 190vw;
+    }
+    .projeto {
+        background-color: rgba(204, 203, 206, 0.7);
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px 5px rgb(56, 51, 51);
+        padding: 5%;
+        max-width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projeto:hover {
+        background-color: azure;
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    .nome {
+        font-size: 4vw;
+    }
+    session .pokedex .apresentacao {
+        font-size: 2vw;
+    }
+    .gif-charizard {
+        width: 70%;
+        margin-left: 30%;
+    }
+}

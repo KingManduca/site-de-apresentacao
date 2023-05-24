@@ -1,0 +1,247 @@
+body {
+    font-family: 'Sofia Sans','EB Garamond', sans-serif;
+    max-width: 99.8%;
+    background-color: #9e9a9a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabeca {
+    border-width: 1px;
+    display: flex;
+    background-color: #0c101c;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.logo {
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.menu {
+    align-self: center;
+}
+
+.menu li {
+    color: rgb(255, 255, 255);
+    padding-left: 1%;
+    display: inline-block;
+    font-size: 1vw;
+}
+
+.menu li:hover {
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+
+.background {
+    background-image: url(Imagens/Curriculo/fundo-branco-monocromatico-de-estilo-de-papel_52683-66443.avif);
+    max-height: 1700px;
+    height: 42vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+
+.template {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 5px 5px 5px rgb(56, 51, 51); 
+    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90% 5% 5%;
+    border-radius: 15px;
+    padding: 2%;
+    margin-top: 4%;
+    margin-left: 25%;
+}
+
+.Imagem {
+    width: 350px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.texto {
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    max-height: 260px;
+    max-width: 550px;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2%;
+}
+
+@media (max-width: 1024px) {
+    
+
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 68vw;
+    }
+
+    .template {
+        padding: 2%;
+    }
+
+    .ident {
+        gap: 2%
+    }
+    
+        
+    .Imagem {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .texto {
+        box-shadow: none;
+        overflow: scroll;
+        margin-top: 15%;
+        padding-right: 5%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .cabeca {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 35%;  
+        margin-left: 30%;     
+    }
+
+
+    .menu ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        font-size: 5vw;
+        padding-left: 2%;
+        padding-bottom: 2%;
+    }
+
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 190vw;
+    }
+
+    .template {
+        width: 90%;
+        height: 58%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .ident {
+        gap: 2%
+    }
+    
+        
+    .Imagem {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    .texto {
+        box-shadow: none;
+        padding: 4%;
+        font-size: 4.493749vw;
+        max-height: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    .cabeca {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 35%;  
+        margin-left: 30%;     
+    }
+
+
+    .menu ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        font-size: 5vw;
+        padding-left: 2%;
+        padding-bottom: 2%;
+    }
+
+    .background {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 190vw;
+    }
+
+    .template {
+        width: 90%;
+        height: 58%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .ident {
+        gap: 2%
+    }
+    
+        
+    .Imagem {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .texto {
+        box-shadow: none;
+        padding: 4%;
+        font-size: 4.493749vw;
+    }
+
+}
